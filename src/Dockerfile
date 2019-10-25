@@ -13,11 +13,11 @@ RUN set -e -u -x \
     # Install packages
 \
     && apk add --no-cache --no-progress --virtual BUILD_DEPS curl \
-    && apk add --no-cache --no-progress openssh-server python socat \
+    && apk add --no-cache --no-progress bash openssh-server python socat \
 \
     # Install s6-overlay
 \
-    && curl --location "https://github.com/timonier/dumb-entrypoint/raw/master/src/s6-overlay/installer" | sh -s -- install \
+    && curl --location "https://gitlab.com/timonier/dumb-entrypoint/raw/master/src/s6-overlay/installer" | bash -s -- install \
 \
     # Generate ssh keys
 \
