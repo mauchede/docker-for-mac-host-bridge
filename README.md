@@ -2,6 +2,8 @@
 
 Emulate docker0 bridge for docker-for-mac
 
+⚠️ This project is no longer maintained. ⚠️
+
 ## Installation
 
 This project works with [socat](https://linux.die.net/man/1/socat) and [sshuttle](sshuttle/sshuttle). These dependencies can be installed with [brew](https://brew.sh/):
@@ -30,23 +32,11 @@ sshuttle --remote root@127.0.0.1 --ssh-cmd 'ssh -i ${HOME}/.ssh/id_rsa -o Strict
 
 __Note__: `socat` is mandatory because port forwarding is not allowed when a container uses `--net host`.
 
-## Contributing
-
-1. Fork it.
-2. Create your branch: `git checkout -b my-new-feature`.
-3. Commit your changes: `git commit -am 'Add some feature'`.
-4. Push to the branch: `git push origin my-new-feature`.
-5. Submit a [merge request](https://docs.gitlab.com/ee/user/project/merge_requests/).
-
-__Note__: [GitHub repository](https://github.com/mauchede/docker-for-mac-host-bridge) is a mirror. [Merge request](https://docs.gitlab.com/ee/user/project/merge_requests/) has to be submitted on the [GitLab repository](https://gitlab.com/mauchede/docker-for-mac-host-bridge).
-
-If you like / use this project, please let me known by adding a [★](https://help.github.com/articles/about-stars/) on the [GitHub repository](https://github.com/mauchede/docker-for-mac-host-bridge) or on the [GitLab repository](https://gitlab.com/mauchede/docker-for-mac-host-bridge).
-
 ## Links
 
 * [brew](https://brew.sh/)
 * [docker-for-mac networking](https://docs.docker.com/docker-for-mac/networking/)
 * [image "mauchede/docker-for-mac-host-bridge"](https://hub.docker.com/r/mauchede/docker-for-mac-host-bridge/)
 * [socat](https://linux.die.net/man/1/socat)
-* [sshuttle](sshuttle/sshuttle)
+* [sshuttle](https://github.com/sshuttle/sshuttle)
 * [using socat to forward new ports via stdio in a running docker container](https://gist.github.com/RickyCook/663b9f4ae53d454f73bf)
